@@ -1,0 +1,57 @@
+.contenedor {
+  background-image: url('image/paises4.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Utilizar flexbox */
+  flex-direction: column; /* Apilar los elementos verticalmente */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url('./font/Belanosima-Regular.ttf');
+}
+
+.contenedor h1 {
+  font-family: 'Gagalin-Regular';
+  color: #f8d38f;
+  font-size: 60px; /* Aumentar el tamaño del título */
+  font-weight: bold; /* Aumentar el peso de la fuente del título */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 1.0); /* Añadir sombra al título */
+}
+
+.access {
+  font-family: 'Gagalin-Regular';
+  background-color: #9b622a;
+  color: #e7dfdf;
+  font-weight: bold;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 3px 6px rgba(1, 1, 1, 3.5);
+  font-size: 15px;
+}
+
+.access:hover {
+  text-decoration: none !important;
+  background-color: #f7f3ec;
+  cursor: pointer;
+  transform: translateY(-15px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: #000000; /* Cambiar el color del texto a negro */
+}

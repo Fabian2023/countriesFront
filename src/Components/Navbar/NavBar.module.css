@@ -1,0 +1,71 @@
+/* Estilos compartidos */
+.allfilters select,
+.searchBar,
+.createActivityButton button,
+.activity {
+  background-color: transparent;
+  color: rgb(247, 246, 243); /* Texto del select en blanco */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.allfilters select {
+  padding: 5px;
+  background-color: transparent; 
+  
+}
+
+.allfilters select option {
+  color: black; /* Ajustar el color del texto de las opciones del select */
+  background-color: rgba(207, 161, 61, 0.5); /* Fondo semitransparente de las opciones */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque en el fondo */
+  position: relative;
+}
+
+
+
+.allfilters select:focus {
+  outline: none;
+}
+
+
+
+.createActivityButton {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.createActivityButton button:hover::after {
+  transform: scaleX(1);
+}
+
+.createActivityButton button:hover {
+  text-shadow: 0 0 10px rgb(249, 252, 249);
+}
+
+.activity:hover::after {
+  transform: scaleX(1);
+}
+
+.activity:hover {
+  text-shadow: 0 0 10px rgb(251, 252, 249);
+}
+
+.activityButton {
+  margin-right: 50px; /* Puedes ajustar este valor según tus preferencias */
+}
+
+/* Estilos específicos para .containers */
+.containers {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(207, 161, 61, 0.5);
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+

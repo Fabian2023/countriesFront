@@ -1,0 +1,110 @@
+.containerform {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(250, 250, 154, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 2.0);
+  transition: box-shadow 0.3s ease;
+}
+
+.containerform:focus,
+.containerform:hover {
+  box-shadow: 0 0 20px rgba(233, 233, 6, 0.6); /* Cambiar el efecto de iluminación cuando el formulario está enfocado o el cursor está sobre él */
+}
+
+
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./fondo/fondoform.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Centrar el título dentro del contenedor */
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block; /* Cambiar a bloque para ocupar una línea completa */
+  margin-bottom: 5px; /* Añadir un pequeño espacio entre el título y el input */
+}
+
+.form input[type="text"],
+.form select,
+.form input[type="radio"] {
+  width: 70%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 10px; /* Añadir espacio entre los inputs */
+}
+
+button[type="submit"] {
+  background-color: #998549;
+  color: hsl(0, 87%, 3%);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; /* Añadir espacio entre el último input y el botón */
+}
+
+button[type="submit"]:hover {
+  background-color: #b4a05b;
+}
+
+.error {
+  color: red;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.volver {
+  background-color: #998549;
+  color: hsl(0, 87%, 3%);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.volver:hover {
+  background-color: #b4a05b;
+}
+
+.success {
+  color: rgb(7, 73, 7);
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.serverError{
+  color: rgb(241, 18, 18);
+  font-weight: bold;
+
+}
+
+.form label input[type="radio"] {
+  margin: 0;
+  margin-right: 8px;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,5 @@
+export const GET_COUNTRIES = 'GET_COUNTRIES'
+export const GET_ACTIVITY ='GET_ACTIVITY'
+export const GET_COUNTRYID ='GET_COUNTRYID'
+
+    

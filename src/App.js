@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route} from 'react-router-dom';
+import Landing from './Components/Landing/Landing';
+import Card from './Components/Card/Card';
+import DetailCountries from './Components/Detail/DetailCountries';
+import CreateActivity from './Components/CreateActivity/CreateActivity';
+import ActivityCountry from './Components/ActivityFilter/ActivityCountry';
 
 function App() {
+ 
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Card />} />
+        <Route path='/home/detail/:idPais' element={<DetailCountries/>} />
+        <Route path='/home/activities' element={<CreateActivity/>} />
+        <Route path="/home/actifilter" element={<ActivityCountry />} />
+      </Routes>
     </div>
   );
 }

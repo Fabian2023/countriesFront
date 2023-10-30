@@ -1,0 +1,49 @@
+.containerSearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  
+}
+
+.busqueda {
+  border: none;
+  border-radius: 15px;
+  padding: 2px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.buscar {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 8px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  font-size: 15px; /* Aumenta el tamaño de la fuente */
+}
+
+.volver {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 8px;
+  background-color: #bba85b;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.8s;
+  margin-left: 5px;
+}
+
+.buscar:hover {
+ 
+  text-shadow: 0 0 8px white;
+}
+
+
+

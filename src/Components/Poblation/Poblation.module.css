@@ -1,0 +1,18 @@
+/* poblation.module.css */
+.select-container {
+    background-color: rgba(207, 161, 61, 0.0);
+    color: white;
+    border: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 330px;
+    outline: none;
+  }
+  
+  .custom-option {
+    color: black; /* Ajustar el color del texto de las opciones del select */
+    background-color: white; /* Ajustar el color de fondo de las opciones del select */
+  }
+  

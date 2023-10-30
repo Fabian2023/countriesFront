@@ -1,0 +1,87 @@
+.containerSelect {
+  background-image: url("./image/fondoHome1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 180px;
+  padding-top: 170px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectCustom {
+  font-size: 15px;
+  padding: 10px;
+  width: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #e7c00f;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(221, 165, 10, 0.651);
+  margin-right: 20px; /* Espacio entre el select y la tarjeta */
+  margin-bottom: 10px; /* Espacio entre el select y el botón */
+  color: #0c0c0c;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+  color: #f5f5f5;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+select option {
+  font-size: 14px;
+}
+
+.volveract {
+  background-color: #998549;
+  color: hsl(0, 87%, 3%);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #ffffff; /* Cambio de color del texto del botón */
+}
+
+.volveract:hover {
+  background-color: #b4a05b;
+}
+
+.cardContainer.show {
+  padding: 20px;
+  flex: 1; /* Hacemos que la tarjeta tome el espacio disponible */
+  margin-right: 20px; /* Espacio entre el select y la tarjeta */
+  margin-top: 20px;
+  
+}
+
+.cardContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -120px;
+  margin-left: 350px;
+  background-color: rgba(221, 165, 10, 0.651);
+  border: 0px solid transparent;
+  border-radius: 10px;
+  height: 400px;
+  
+}
+

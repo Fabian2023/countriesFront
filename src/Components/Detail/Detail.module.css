@@ -1,0 +1,73 @@
+.container {
+    background-image: url('fondo/fondoHome1.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #615303;
+    border-radius: 8px; /* Ajusta el valor del radio de borde según tus preferencias */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 750px;
+    height: 550px;
+    margin: 50px auto 0;
+    position: relative;
+    background-color: rgba(229, 190, 137, 0.5);
+  }
+
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 127, 83, 0.5); /* Cambia el valor de la transparencia según tus preferencias */
+    z-index: -1;
+  }
+  
+
+  
+  .card:hover {
+    
+    transform: translateY(-5px);
+  }
+  
+  .card h2,
+  .card p {
+    text-align: left;
+    margin: 0;
+    margin-left: 60px; /* Ajusta la separación deseada */
+  }
+  
+
+  .card img {
+    margin-bottom: 60px; /* Ajusta la separación deseada */
+    margin-right:100px
+   
+  }
+
+  .volver {
+    background-color: #8B5A2B; /* Marrón oscuro - ajusta el color de fondo según tus preferencias */
+    color: #FFFFFF; /* Color de texto - ajusta el color de texto según tus preferencias */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .volver:hover {
+    background-color: #A3754C; /* Marrón medio - ajusta el color de fondo del hover según tus preferencias */
+  }
+  
