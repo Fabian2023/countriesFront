@@ -51,9 +51,11 @@ const CreateActivity = () => {
 
     } else if (name === "duration") {
       setDuration(value);
+      console.log("duration:",value);
 
     } else if (name === "season") {
       setSeason(value);
+      console.log("season",value);
     } else if (name === "countries") {
       const selectedOptions = Array.from(
         event.target.selectedOptions,
