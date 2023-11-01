@@ -1,9 +1,18 @@
 .container {
-    background-image: url('image/fondoHome1.jpeg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
+  background-image: url('image/pexels-photo-129731.webp');
+  background-size: contain;
+  background-position: center; /* Ajusta la posición según tus necesidades */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body {
+
+  background: var(--color-bg);
+  color: var(--color-white);
+  background-image: url('image/pexels-photo-129731.webp');
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: right center;/* Ajusta la posición de la imagen */
+}

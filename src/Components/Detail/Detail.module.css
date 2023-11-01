@@ -71,3 +71,25 @@
     background-color: #A3754C; /* Marrón medio - ajusta el color de fondo del hover según tus preferencias */
   }
   
+
+  /* Estilos generales para pantallas pequeñas */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 90%; /* Ajusta el ancho de la card para pantallas pequeñas */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin: 20px auto; /* Ajusta el margen según tus preferencias */
+    padding: 10px;
+  }
+
+  .card h2,
+  .card p {
+    margin-left: 0; /* Ajusta la separación según tus preferencias */
+  }
+
+  .card img {
+    margin-bottom: 50px; /* Ajusta la separación según tus preferencias */
+    margin-right: 0;
+    max-width: 50%; /* La imagen no superará el ancho de su contenedor */
+    max-height: 50%;
+  }
+}

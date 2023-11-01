@@ -7,7 +7,7 @@
 
 .card {
   width: 250px; /* Ajusta el ancho según tus necesidades */
-  height: 245px;
+  height: 220px;
   flex-basis: 15%;
   margin: 10px;
   padding: 10px;
@@ -16,9 +16,10 @@
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 60%;
   margin-bottom: 10px;
+  object-fit: cover
 }
 
 .card h3 {
@@ -80,4 +81,17 @@
 .pageButton.active {
   background-color: rgba(128, 105, 5, 0.9);
   color: #0a0a0a;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 100%; /* Haz que la card ocupe el ancho completo */
+    flex-basis: auto; /* Permite que la card se ajuste automáticamente */
+    max-width: 210px; /* Define el ancho máximo de la card */
+  }
+
+  .container {
+    justify-content: center; /* Centra las cards horizontalmente en pantallas pequeñas */
+  }
 }
