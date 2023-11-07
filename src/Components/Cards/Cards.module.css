@@ -89,7 +89,7 @@
     width: 100%; 
     flex-basis: auto; 
     max-width: 190px; 
-    height: 195px;
+    height: 198px;
   }
 
   .card img {
@@ -107,8 +107,8 @@
 @media screen and (max-width: 1024px) {
   .pagination {
     justify-content: flex-start; /* Mueve la paginación a la izquierda */
-    margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
-    margin-bottom: 10px;
+    margin-left: 12px; /* Ajusta el margen izquierdo según tus necesidades */
+    margin-bottom: -1px;
   }
 
   .pagination button {
