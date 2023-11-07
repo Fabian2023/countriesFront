@@ -86,12 +86,34 @@
 /* Estilos para pantallas más pequeñas */
 @media screen and (max-width: 1024px) {
   .card {
-    width: 100%; /* Haz que la card ocupe el ancho completo */
-    flex-basis: auto; /* Permite que la card se ajuste automáticamente */
-    max-width: 210px; /* Define el ancho máximo de la card */
+    width: 100%; 
+    flex-basis: auto; 
+    max-width: 190px; 
+    height: 180px;
+  }
+
+  .card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 45%; /* Ajusta la altura automáticamente manteniendo la proporción */
+    margin-bottom: 1px; /* Ajusta el espacio entre la imagen y el texto */
   }
 
   .container {
-    justify-content: center; /* Centra las cards horizontalmente en pantallas pequeñas */
+    justify-content: center; 
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .pagination {
+    justify-content: flex-start; /* Mueve la paginación a la izquierda */
+    margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+    margin-bottom: -9px;
+  }
+
+  .pagination button {
+    padding: 3px 6px;
+    margin: 0 2px;
+    font-size: 12px;
   }
 }

@@ -34,11 +34,11 @@ const Cards = ({ data, continentFilter }) => {
   const getPageNumbersToShow = (totalPages, currentPage) => {
     const pageNumbersToShow = [];
     let startPage = Math.max(currentPage - 2, 1);
-    let endPage = Math.min(startPage + 9, totalPages);
+    let endPage = Math.min(startPage + 4, totalPages);
 
     // Ajustar el rango para que siempre haya 5 páginas cuando se navega atreves de la paginacion// 
-    if (endPage - startPage < 10) {
-      startPage = Math.max(endPage - 9, 1);
+    if (endPage - startPage < 5) {
+      startPage = Math.max(endPage - 4, 1);
     }
 
     for (let i = startPage; i <= endPage; i++) {

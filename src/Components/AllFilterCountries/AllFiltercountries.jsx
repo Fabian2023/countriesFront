@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GetCountries } from '../../Redux/actions';
+import styles from './AllFiltercountries.module.css'
 
 const AllFilterCountries = ({ onFilteredCountriesChange }) => {
   const [selectedContinent, setSelectedContinent] = useState('');
@@ -45,28 +46,29 @@ const AllFilterCountries = ({ onFilteredCountriesChange }) => {
   console.log('Selected Ordering:', selectedOrdering);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div style={{ fontWeight: 'bold' }}>
-        <select id="continent" value={selectedContinent} onChange={handleSelectContinent}>
-          <option value="">Todos los continentes</option>
-          <option value="Africa">África</option>
-          <option value="South America">América del Sur</option>
-          <option value="North America">América del Norte</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europa</option>
-          <option value="Oceania">Oceanía</option>
-        </select>
+     
+      <div style={{ display: 'flex', alignItems: 'center' }} className={styles['all-filter-container']}>
+        <div style={{ fontWeight: 'bold' }} className={styles['filter-select']}>
+          <select id="continent" value={selectedContinent} onChange={handleSelectContinent} className={styles['filter-select']}>
+            <option value="">continentes</option>
+            <option value="Africa">África</option>
+            <option value="South America">América del Sur</option>
+            <option value="North America">América del Norte</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europa</option>
+            <option value="Oceania">Oceanía</option>
+          </select>
+        </div>
+        <div style={{ marginLeft: '30px' }} className={styles['filter-select']}>
+          <select id="ordering" value={selectedOrdering} onChange={handleSelectOrdering} className={styles['filter-select']}>
+            <option value="">Orden</option>
+            <option value="Asc">Ascendente</option>
+            <option value="Desc">Descendente</option>
+          </select>
+        </div>
       </div>
-      <div style={{ marginLeft: '30px' }}>
-        <select id="ordering" value={selectedOrdering} onChange={handleSelectOrdering}>
-          <option value="">Orden</option>
-          <option value="Asc">Ascendente</option>
-          <option value="Desc">Descendente</option>
-        </select>
-      </div>
-    </div>
-  );
-};
-
+    );
+  }
+       
 export default AllFilterCountries;
 

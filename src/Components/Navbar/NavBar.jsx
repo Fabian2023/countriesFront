@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Poblation from '../Poblation/Poblation';
 import SearchBar from '../SearchBar/SearchBar';
@@ -25,30 +24,32 @@ const Navbar = ({ onSearch, onPop, onFilteredCountriesChange }) => {
       <div className={styles.searchBar}>
         <SearchBar onSearch={onSearch} />
       </div>
-      <div >
-        <Poblation onPop={onPop} />
-      </div>
-      <div className={styles.allfilters}>
+      <div className={styles.additionalContainer}>
+        <div >
+          <Poblation onPop={onPop} />
+        </div>
+        <div className={styles.allfilters}>
           <AllFilterCountries onFilteredCountriesChange={onFilteredCountriesChange}/>
         </div>
-      <div className={styles.createActivityButton}>
-        {showCreateActivity && <CreateActivity />}
-        <Link to="/home/activities">
-          <button onClick={toggleCreateActivity}>Crear Actividad</button>
-        </Link>
-      </div>
-      <div className={styles.activityButton} >
-        {showActivity && <ActivityCountry />}
-        <Link to="/home/actifilter">
-          <button className={styles.activity} onClick={showActivityCreated}>
-            Ir a Actividades
-          </button>
-        </Link>
-       
+        <div className={styles.createActivityButton}>
+          {showCreateActivity && <CreateActivity />}
+          <Link to="/home/activities">
+            <button onClick={toggleCreateActivity}>Crear Actividad</button>
+          </Link>
+        </div>
+        <div className={styles.activityButton} >
+          {showActivity && <ActivityCountry />}
+          <Link to="/home/actifilter">
+            <button className={styles.activity} onClick={showActivityCreated}>
+              Ir a Actividades
+            </button>
+          </Link>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+
 
