@@ -35,8 +35,8 @@
 
 
 .createActivityButton {
-  margin-left: auto;
-  margin-right: 10px;
+ 
+  margin-left: 10px;
 }
 
 .createActivityButton button:hover::after {
@@ -69,3 +69,10 @@
   padding-bottom: 5px;
 }
 
+@media (max-width: 767px) {
+  .containers {
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+}
