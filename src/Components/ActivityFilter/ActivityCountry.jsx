@@ -45,7 +45,7 @@ const ActivityCountry = () => {
 
   const fetchActivities = async () => {
     try {
-      const response = await axios.get("https://countriesback-production-12d6.up.railway.app/countries/activities");
+      const response = await axios.get("https://countriesback-production-14f4.up.railway.app/countries/activities");
       setActivities(response.data);
       console.log("Actividades obtenidas:", response.data);
     } catch (error) {
