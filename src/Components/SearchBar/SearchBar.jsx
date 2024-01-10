@@ -21,7 +21,7 @@ const SearchBar = ({ onSearch }) => {
     }
 
     try {
-      const response = await axios.get('https://countriesback-production-12d6.up.railway.app/countries', {
+      const response = await axios.get('https://countriesback-production-14f4.up.railway.app/countries', {
         params: {
           name: searchTerm,
         },
