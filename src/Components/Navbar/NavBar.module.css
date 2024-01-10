@@ -2,6 +2,7 @@
 .allfilters select,
 .searchBar,
 .createActivityButton button,
+.poblationButton button,
 .activity {
   background-color: transparent;
   color: rgb(247, 246, 243); /* Texto del select en blanco */
@@ -39,6 +40,13 @@
   margin-left: 10px;
 }
 
+.poblationButton{
+  margin-left: -310px;
+}
+
+.activity{
+  margin-left:60px;
+}
 .createActivityButton button:hover::after {
   transform: scaleX(1);
 }

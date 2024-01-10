@@ -25,7 +25,7 @@ const Navbar = ({ onSearch, onPop, onFilteredCountriesChange }) => {
       <div className={styles.searchBar}>
         <SearchBar onSearch={onSearch} />
       </div>
-      <div >
+      <div className={styles.poblationButton} >
         <Poblation onPop={onPop} />
       </div>
       <div className={styles.allfilters}>
