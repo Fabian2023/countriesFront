@@ -27,6 +27,7 @@
   cursor: pointer;
   transition: background-color 0.8s;
   font-size: 15px; /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
 }
 
 .volver {
@@ -47,7 +48,7 @@
 
 @media screen and (max-width: 1024px) {
   .buscar {
-    font-size: 13px; /* Reduce el tamaño de la fuente */
+    font-size: 15px; /* Reduce el tamaño de la fuente */
   }
   .busqueda{
     

@@ -57,7 +57,7 @@ const SearchBar = ({ onSearch }) => {
         </button>
         <input
           type="text"
-          placeholder="Busca tu país..."
+          placeholder="encuentra tu país..."
           value={searchTerm}
           onChange={handleInputChange}
           className={styles.busqueda}
