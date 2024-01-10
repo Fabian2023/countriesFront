@@ -20,7 +20,7 @@ const CreateActivity = () => {
 
   const listCountries = async () => {
     try {
-      const response = await axios.get("https://countriesback-production-12d6.up.railway.app/countries");
+      const response = await axios.get("https://countriesback-production-14f4.up.railway.app/countries");
       const countriesData = response.data;
       setCountriesList(countriesData);
     } catch (error) {
@@ -84,7 +84,7 @@ const CreateActivity = () => {
 
     try {
       const response = await axios.post(
-        "https://countriesback-production-12d6.up.railway.app/countries/activities",
+        "https://countriesback-production-14f4.up.railway.app/countries/activities",
         {
           name,
           difficulty: selectedDifficulty,
