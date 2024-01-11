@@ -55,3 +55,14 @@ a {
 .link {
   color: #000000; /* Cambiar el color del texto a negro */
 }
+
+.modalContainer {
+  width: 50%;
+  margin: auto;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -7,6 +7,8 @@ import styles from './NavBar.module.css';
 import CreateActivity from '../CreateActivity/CreateActivity';
 import ActivityCountry from '../ActivityFilter/ActivityCountry';
 import AllFilterCountries from '../AllFilterCountries/AllFiltercountries';
+import { FaPowerOff } from "react-icons/fa6";
+
 
 const Navbar = ({ onSearch, onPop, onFilteredCountriesChange }) => {
   const [showCreateActivity, setShowCreateActivity] = useState(false);
@@ -44,7 +46,11 @@ const Navbar = ({ onSearch, onPop, onFilteredCountriesChange }) => {
             Ir a Actividades
           </button>
         </Link>
-       
+      </div>
+      <div className={styles.logoutButton}>
+        <Link to="/">
+          <FaPowerOff size={18} color="white" />
+        </Link>
       </div>
     </nav>
   );
