@@ -49,7 +49,7 @@ const Navbar = ({ onSearch, onPop, onFilteredCountriesChange }) => {
       </div>
       <div className={styles.logoutButton}>
         <Link to="/">
-          <FaPowerOff size={18} color="white" />
+          <FaPowerOff size={19} color="white" />
         </Link>
       </div>
     </nav>
