@@ -55,8 +55,8 @@
 .pagination button {
   padding: 5px 8px;
   margin: 0 5px;
-  background-color: rgba(250, 217, 30, 0.9);
-  color: #070707;
+  background-color:#D5A85B;
+  color:white;
   border: none;
   cursor: pointer;
   font-size: 14px;
@@ -65,7 +65,7 @@
 }
 
 .pagination button:hover {
-  background-color: rgba(216, 151, 10, 0.5);
+  background-color: #CF9F5D;
 }
 
 .pagination button:disabled {
@@ -74,12 +74,12 @@
 }
 
 .pageButton{
-  background-color: rgba(248, 233, 166, 0.5);
+  background-color: #CF9F5D;
 
 }
 
 .pageButton.active {
-  background-color: rgba(128, 105, 5, 0.9);
+  background-color: #CF9F5D;
   color: #0a0a0a;
 }
 
@@ -106,14 +106,15 @@
 
 @media screen and (max-width: 1024px) {
   .pagination {
-    justify-content: flex-start; /* Mueve la paginación a la izquierda */
-    margin-left: 12px; /* Ajusta el margen izquierdo según tus necesidades */
+    justify-content: center; /* Centra la paginación horizontalmente */
+    margin-left: 0; /* Elimina el margen izquierdo para centrar completamente */
     margin-bottom: -1px;
   }
 
   .pagination button {
     padding: 3px 6px;
-    margin: 0 2px;
+    margin: 0 4px; /* Ajusta el espacio entre los botones según tus necesidades */
     font-size: 12px;
   }
 }
+
