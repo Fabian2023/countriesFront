@@ -69,7 +69,7 @@ const Landing = () => {
         
 
       >
-        <h2 style={{ color: '#f8d38f' }}>Bienvenido a Countries Dreams, {user.name}!</h2>
+        <h2 style={{ color: '#632E12' }}>Bienvenido a Countries Dreams, {user.name}!</h2>
   <p style={{ color: 'white', fontWeight: 'bold' }}>¡Conoce el país más poblado, ordénalos alfabéticamente, crea actividades y más!</p>
         <button onClick={closeModal}
          style={{
